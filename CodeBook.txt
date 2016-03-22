@@ -1,0 +1,215 @@
+CODEBOOK
+
+Getting and Cleaning Data
+
+Joseph Krebs
+
+2016-03-20
+
+=================
+File: merged_dataset.csv
+=================
+
+This dataset is the merge of the UCI HAR training and testing datasets
+
+Subjects        
+=================
+The subjects for this study are identified by a unique ID number.
+
+Activities
+================
+The 6 activities on which measurements were taken are the following:
+    walking
+    walking_upstairs
+    walking_downstairs
+    sitting
+    standing
+    laying
+
+Features 
+=================
+The features selected for this database are the mean and standard deviation mesurements from the UCI HAR Dataset. The following signals are characterized:
+
+tbodyacc.xyz
+tgravityacc.xyz
+tbodyaccjerk.xyz
+tbodygyro.xyz
+tbodygyrojerk.xyz
+tbodyaccmag
+tgravityaccmag
+tbodyaccjerkmag
+tbodygyromag
+tbodygyrojerkmag
+fbodyacc.xyz
+fbodyaccjerk.xyz
+fbodygyro.xyz
+fbodyaccmag
+fbodyaccjerkmag
+fbodygyromag
+fbodygyrojerkmag
+
+Variables
+=================
+The set of variables that were estimated for subject/activity/signal combinations are: 
+
+mean: Mean value
+std: Standard deviation
+
+Where dimensional coordinates are required, mean and std estimates are further elaborated with "-x", "-y", or "-z" to denote 3-axial signals in the X, Y and Z directions.
+
+The Full Set of Columns in the Dataset:
+=======================================
+
+Column                      DataType    Description
+----------------------      --------    ----------------------------
+subject                     integer     Unique subject identifier            
+activity                    string      Activity, one of (walking, walking_upstairs, walking_downstairs, sitting, standing, laying)
+tbodyacc.mean.x             float       feature variable (see above)
+tbodyacc.mean.y             float       feature variable (see above)
+tbodyacc.mean.z             float       feature variable (see above)
+tbodyacc.std.x              float       feature variable (see above)
+tbodyacc.std.y              float       feature variable (see above)
+tbodyacc.std.z              float       feature variable (see above)
+tgravityacc.mean.x          float       feature variable (see above)
+tgravityacc.mean.y          float       feature variable (see above)    
+tgravityacc.mean.z          float       feature variable (see above)    
+tgravityacc.std.x           float       feature variable (see above)
+tgravityacc.std.y           float       feature variable (see above)
+tgravityacc.std.z           float       feature variable (see above)
+tbodyaccjerk.mean.x         float       feature variable (see above)    
+tbodyaccjerk.mean.y         float       feature variable (see above)    
+tbodyaccjerk.mean.z         float       feature variable (see above)    
+tbodyaccjerk.std.x          float       feature variable (see above)    
+tbodyaccjerk.std.y          float       feature variable (see above)    
+tbodyaccjerk.std.z          float       feature variable (see above)    
+tbodygyro.mean.x            float       feature variable (see above)
+tbodygyro.mean.y            float       feature variable (see above)
+tbodygyro.mean.z            float       feature variable (see above)
+tbodygyro.std.x             float       feature variable (see above)
+tbodygyro.std.y             float       feature variable (see above)
+tbodygyro.std.z             float       feature variable (see above)
+tbodygyrojerk.mean.x        float       feature variable (see above)
+tbodygyrojerk.mean.y        float       feature variable (see above)
+tbodygyrojerk.mean.z        float       feature variable (see above)
+tbodygyrojerk.std.x         float       feature variable (see above)
+tbodygyrojerk.std.y         float       feature variable (see above)
+tbodygyrojerk.std.z         float       feature variable (see above)
+tbodyaccmag.mean            float       feature variable (see above)
+tbodyaccmag.std             float       feature variable (see above)
+tgravityaccmag.mean         float       feature variable (see above)    
+tgravityaccmag.std          float       feature variable (see above)
+tbodyaccjerkmag.mean        float       feature variable (see above)
+tbodyaccjerkmag.std         float       feature variable (see above)
+tbodygyromag.mean           float       feature variable (see above)
+tbodygyromag.std            float       feature variable (see above)
+tbodygyrojerkmag.mean       float       feature variable (see above)
+tbodygyrojerkmag.std        float       feature variable (see above)
+fbodyacc.mean.x             float       feature variable (see above)
+fbodyacc.mean.y             float       feature variable (see above)
+fbodyacc.mean.z             float       feature variable (see above)
+fbodyacc.std.x              float       feature variable (see above)
+fbodyacc.std.y              float       feature variable (see above)
+fbodyacc.std.z              float       feature variable (see above)
+fbodyaccjerk.mean.x         float       feature variable (see above)        
+fbodyaccjerk.mean.y         float       feature variable (see above)        
+fbodyaccjerk.mean.z         float       feature variable (see above)        
+fbodyaccjerk.std.x          float       feature variable (see above)        
+fbodyaccjerk.std.y          float       feature variable (see above)        
+fbodyaccjerk.std.z          float       feature variable (see above)        
+fbodygyro.mean.x            float       feature variable (see above)    
+fbodygyro.mean.y            float       feature variable (see above)    
+fbodygyro.mean.z            float       feature variable (see above)    
+fbodygyro.std.x             float       feature variable (see above)    
+fbodygyro.std.y             float       feature variable (see above)        
+fbodygyro.std.z             float       feature variable (see above)
+fbodyaccmag.mean            float       feature variable (see above)
+fbodyaccmag.std             float       feature variable (see above)    
+fbodybodyaccjerkmag.mean    float       feature variable (see above)    
+fbodybodyaccjerkmag.std     float       feature variable (see above)    
+fbodybodygyromag.mean       float       feature variable (see above)
+fbodybodygyromag.std        float       feature variable (see above)
+fbodybodygyrojerkmag.mean   float       feature variable (see above)    
+fbodybodygyrojerkmag.std    float       feature variable (see above)
+
+
+=================
+File: averaged_dataset.csv
+=================
+
+This dataset contains the average of each variable for each activity and each subject. Subjects, activites, features are as defined above. Variables share names as above, but each represents the average value by subject and activity combination.
+
+The Full Set of Columns in the Dataset:
+=======================================
+
+Column                      DataType    Description
+----------------------      --------    ----------------------------
+subject                     integer     Unique subject identifier            
+activity                    string      Activity, one of (walking, walking_upstairs, walking_downstairs, sitting, standing, laying)
+tbodyacc.mean.x             float       feature variable average for subject and activity
+tbodyacc.mean.y             float       feature variable average for subject and activity
+tbodyacc.mean.z             float       feature variable average for subject and activity
+tbodyacc.std.x              float       feature variable average for subject and activity
+tbodyacc.std.y              float       feature variable average for subject and activity
+tbodyacc.std.z              float       feature variable average for subject and activity
+tgravityacc.mean.x          float       feature variable average for subject and activity
+tgravityacc.mean.y          float       feature variable average for subject and activity    
+tgravityacc.mean.z          float       feature variable average for subject and activity    
+tgravityacc.std.x           float       feature variable average for subject and activity
+tgravityacc.std.y           float       feature variable average for subject and activity
+tgravityacc.std.z           float       feature variable average for subject and activity
+tbodyaccjerk.mean.x         float       feature variable average for subject and activity    
+tbodyaccjerk.mean.y         float       feature variable average for subject and activity    
+tbodyaccjerk.mean.z         float       feature variable average for subject and activity    
+tbodyaccjerk.std.x          float       feature variable average for subject and activity    
+tbodyaccjerk.std.y          float       feature variable average for subject and activity    
+tbodyaccjerk.std.z          float       feature variable average for subject and activity    
+tbodygyro.mean.x            float       feature variable average for subject and activity
+tbodygyro.mean.y            float       feature variable average for subject and activity
+tbodygyro.mean.z            float       feature variable average for subject and activity
+tbodygyro.std.x             float       feature variable average for subject and activity
+tbodygyro.std.y             float       feature variable average for subject and activity
+tbodygyro.std.z             float       feature variable average for subject and activity
+tbodygyrojerk.mean.x        float       feature variable average for subject and activity
+tbodygyrojerk.mean.y        float       feature variable average for subject and activity
+tbodygyrojerk.mean.z        float       feature variable average for subject and activity
+tbodygyrojerk.std.x         float       feature variable average for subject and activity
+tbodygyrojerk.std.y         float       feature variable average for subject and activity
+tbodygyrojerk.std.z         float       feature variable average for subject and activity
+tbodyaccmag.mean            float       feature variable average for subject and activity
+tbodyaccmag.std             float       feature variable average for subject and activity
+tgravityaccmag.mean         float       feature variable average for subject and activity    
+tgravityaccmag.std          float       feature variable average for subject and activity
+tbodyaccjerkmag.mean        float       feature variable average for subject and activity
+tbodyaccjerkmag.std         float       feature variable average for subject and activity
+tbodygyromag.mean           float       feature variable average for subject and activity
+tbodygyromag.std            float       feature variable average for subject and activity
+tbodygyrojerkmag.mean       float       feature variable average for subject and activity
+tbodygyrojerkmag.std        float       feature variable average for subject and activity
+fbodyacc.mean.x             float       feature variable average for subject and activity
+fbodyacc.mean.y             float       feature variable average for subject and activity
+fbodyacc.mean.z             float       feature variable average for subject and activity
+fbodyacc.std.x              float       feature variable average for subject and activity
+fbodyacc.std.y              float       feature variable average for subject and activity
+fbodyacc.std.z              float       feature variable average for subject and activity
+fbodyaccjerk.mean.x         float       feature variable average for subject and activity        
+fbodyaccjerk.mean.y         float       feature variable average for subject and activity        
+fbodyaccjerk.mean.z         float       feature variable average for subject and activity        
+fbodyaccjerk.std.x          float       feature variable average for subject and activity        
+fbodyaccjerk.std.y          float       feature variable average for subject and activity        
+fbodyaccjerk.std.z          float       feature variable average for subject and activity        
+fbodygyro.mean.x            float       feature variable average for subject and activity    
+fbodygyro.mean.y            float       feature variable average for subject and activity    
+fbodygyro.mean.z            float       feature variable average for subject and activity    
+fbodygyro.std.x             float       feature variable average for subject and activity    
+fbodygyro.std.y             float       feature variable average for subject and activity        
+fbodygyro.std.z             float       feature variable average for subject and activity
+fbodyaccmag.mean            float       feature variable average for subject and activity
+fbodyaccmag.std             float       feature variable average for subject and activity    
+fbodybodyaccjerkmag.mean    float       feature variable average for subject and activity    
+fbodybodyaccjerkmag.std     float       feature variable average for subject and activity    
+fbodybodygyromag.mean       float       feature variable average for subject and activity
+fbodybodygyromag.std        float       feature variable average for subject and activity
+fbodybodygyrojerkmag.mean   float       feature variable average for subject and activity    
+fbodybodygyrojerkmag.std    float       feature variable average for subject and activity    
+   
+   
