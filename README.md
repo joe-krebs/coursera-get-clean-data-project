@@ -1,9 +1,10 @@
-README.md
-Coursera Getting and Cleaning Data Project
-By:     Joseph Krebs
-Date:   2016-03-22 (Please pardon the lateness)
+# README.md
+## Coursera Getting and Cleaning Data Project
+## By:     Joseph Krebs
+## Date:   2016-03-22 (Please pardon the lateness)
 
 The script run_analysis.R is a fully self contained execution script that takes no parameters and performs the following steps:
+
 1. Downloads the UCI HAR zip file
 2. Unzips the UCI HAR zip file to the current directory
 3. Reads the list of feature (column) names
